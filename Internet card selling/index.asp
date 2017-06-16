@@ -1,0 +1,55 @@
+﻿<%@Language=Vbscript%>
+<!--#include Virtual="/Adovbs.inc"-->
+<%response.buffer=true%>
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fa">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1253">
+<title>&#1588;&#1585;&#1705;&#1578; &#1605;&#1607;&#1606;&#1583;&#1587;&#1740; &#1575;&#1585;&#1578;&#1576;&#1575;&#1591;&#1575;&#1578; &#1587;&#1581;&#1585;</title>
+</head>
+
+
+
+<%
+    dim id,p
+    id=Session("sid")
+  if id<>SESSION.SESSIONID  then
+    response.redirect "login.asp"
+  End if%> 
+<body>
+
+<p align="center"><font color="#808000" size="5">&#1588;&#1585;&#1705;&#1578; &#1605;&#1607;&#1606;&#1583;&#1587;&#1740; &#1575;&#1585;&#1578;&#1576;&#1575;&#1591;&#1575;&#1578; &#1587;&#1581;&#1585;</font></p>
+<form method="POST" action="card.asp" style="border: 1px solid #C0C0C0">
+  <p align="right" dir="rtl"><span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><font color="#000080">&#1588;&#1605;&#1575;&#1585;&#1607; &#1587;&#1585;&#1610;&#1575;&#1604;:</font><input type="text" name="T1" size="15" style="font-size: 12pt; border-style: solid; border-width: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080"> 
+  &#1606;&#1608;&#1593; &#1705;&#1575;&#1585;&#1578;:</font><select size="1" name="D1">
+  <option value="15000">5 Hours</option>
+  <option value="25000">10 Hours</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" value="&#1606;&#1602;&#1583;&#1740;" checked name="R1"><font color="#000080">&#1606;&#1602;&#1583;&#1740;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" name="R1" value="&#1594; &#1606;&#1602;&#1583;&#1740;"> 
+  &#1594;&#1610;&#1585; &#1606;&#1602;&#1583;&#1740;</font></p>
+  <p align="right" dir="rtl">&nbsp;</p>
+  <p align="right" dir="rtl"><font color="#000080"><span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>&#1578;&#1608;&#1590;&#1616;&#1581;&#1575;&#1578;:</font><input type="text" name="T2" size="36" style="border-style: solid; border-width: 1"></p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><input type="reset" value="Reset" name="B2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="Submit" name="B1"></p>
+</form>
+
+<p dir="rtl">&nbsp;&nbsp; </p>
+<p dir="rtl"><font face="Nesf" size="2"><a href="index_1.asp">&nbsp; &#1601;&#1585;&#1605; &#1601;&#1585;&#1608;&#1588;&nbsp; 
+&#1606;&#1605;&#1575;&#1740;&#1606;&#1583;&#1711;&#1575;&#1606; &#1608; &#1606;&#1607;&#1575;&#1583;&#1607;&#1575;</a></font></p>
+<p dir="rtl"><font face="Nesf" size="2"><span lang="fa"><a href="panle.asp">
+&#1576;&#1575;&#1586;&#1711;&#1588;&#1578; &#1576;&#1607; &#1605;&#1606;&#1608;&#1740; &#1575;&#1589;&#1604;&#1740;</a></span></font></p>
+<p dir="rtl"><font face="Nesf" size="2"><span lang="fa"><a href="logout.asp">
+&#1582;&#1585;&#1608;&#1580;</a></span></font></p>
+</body>
+
+</html>
